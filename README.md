@@ -36,7 +36,7 @@ Converts a player's hearts into physical Lifesteal Heart items.
 
 ## Credits
 
-- **Mod Developer**: Isaac Ou (squidlover900)
+- **Mod Developer**: squidlover900 (Isaac Ou)
 - **Dependencies**: Fabric API
 
 ## License
