@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "lifesteal",
+  "version": "${version}",
+  "name": "Squidlover900's Lifesteal Mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/lifesteal/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.squidlover900.lifesteal.client.LifestealClient"
+    ],
+    "main": [
+      "net.squidlover900.lifesteal.Lifesteal"
+    ]
+  },
+  "mixins": [
+    "lifesteal.mixins.json",
+    {
+      "config": "lifesteal.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
