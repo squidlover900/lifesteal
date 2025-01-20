@@ -12,7 +12,8 @@ public class CommandRegistrar {
     // List of all command classes to register
     private static final List<Class<?>> COMMAND_CLASSES = Arrays.asList(
             ResetHealthCommand.class,
-            SetHeartsCommand.class
+            SetHeartsCommand.class,
+            ConvertHeartsCommand.class
     );
 
     public static void registerCommands() {
