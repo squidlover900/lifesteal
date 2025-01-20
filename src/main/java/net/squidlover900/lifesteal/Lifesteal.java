@@ -7,6 +7,7 @@ import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.squidlover900.lifesteal.commands.CommandRegistrar;
 import net.squidlover900.lifesteal.item.ModItemGroups;
 import net.squidlover900.lifesteal.item.ModItems;
 import org.slf4j.Logger;
@@ -18,9 +19,13 @@ public class Lifesteal implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        Lifesteal.LOGGER.info("Initializing Squid's Lifesteal mod!");
+
         ModItemGroups.registerItemGroups();
 
         ModItems.registerModItems();
+
+        CommandRegistrar.registerCommands();
 
         ServerLivingEntityEvents.AFTER_DEATH.register(((livingEntity, damageSource) -> {
             if (livingEntity instanceof PlayerEntity victim) {

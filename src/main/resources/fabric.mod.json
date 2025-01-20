@@ -15,6 +15,9 @@
     ],
     "main": [
       "net.squidlover900.lifesteal.Lifesteal"
+    ],
+    "fabric-datagen": [
+      "net.squidlover900.lifesteal.LifestealDataGenerator"
     ]
   },
   "mixins": [
