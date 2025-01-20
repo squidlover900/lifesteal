@@ -1,6 +1,6 @@
 # Lifesteal Mod
 
-Welcome to the **Lifesteal Mod**! This mod adds a unique and engaging lifesteal mechanic to Minecraft, where players can gain health by stealing hearts from others.
+Welcome to the **Squid's Lifesteal Mod**! This mod adds a unique and engaging lifesteal mechanic to Minecraft, where players can gain health by stealing hearts from others.
 
 ## Features
 
